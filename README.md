@@ -1,6 +1,6 @@
 # construction
 
-## Genie's assignment_Construction (last upload_220506)
+## Genie's assignment_Construction (last upload_220506 AM 11:42)
 <small>*실제 작업한 사이트의 캡쳐본입니다.</small>
 
 
