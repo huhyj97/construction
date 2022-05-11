@@ -122,10 +122,10 @@ main header .header-nav ul li:hover {
 }
 
 main .main-cont {
-  max-width: 1920px;
+  /* max-width: 1920px;
+  margin: 0 auto; */
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
 }
 
 main .main-cont> :first-child {
