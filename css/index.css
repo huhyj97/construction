@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0px solid silver;
+  outline: none;
+}
+
+body, input, button, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+    color: #333;   
+  }
+
+img {
+    width: 100px;
+    margin: 10px 0;
+  }
+
+h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+a:link {
+  color: #333;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #333;
+}
+
+input {
+  background: none;
+}
+
+button {
+  padding: 1.2rem 0;
+  font-size: 1.1rem;
+  width: 200px;
+  background: #40a2d5;
+  color: #fff;
+  border: 1px solid #40a2d5;
+  border-radius: 0.5rem;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  box-shadow: 0px 64.8148px 46.8519px rgba(64, 162, 213, 0.0759259), 0px 38.5185px 25.4815px rgba(64, 162, 213, 0.0607407), 0px 20px 13px rgba(64, 162, 213, 0.05), 0px 8.14815px 6.51852px rgba(64, 162, 213, 0.0392593), 0px 1.85185px 3.14815px rgba(64, 162, 213, 0.0240741);
+  cursor: pointer;
+}
+
+
+/* main */
+
+main {
+  position: relative;
+  padding-top: 2rem;
+  margin: 0 8%;
+  padding-bottom: 8rem;
+}
+
+main header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+main header h3 {
+  color: #40a2d5;
+  cursor: pointer;
+}
+
+main header .header-nav ul {
+  display: flex;
+  margin-right: 6rem;
+}
+
+main header .header-nav ul li {
+  padding: 0 1rem;
+  cursor: pointer;
+  color: #fff;
+  transition: .3s;
+}
+
+main header .header-nav ul li:hover {
+  color: #ddd;
+}
+
+main .main-cont {
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+main .main-cont> :first-child {
+  width: 50%;
+  margin-left: 3rem;
+}
+
+main .main-cont> :last-child {
+  width:50%;
+  height: 100vh;
+}
+
+main .main-cont .main-txt-1 {
+  margin-top: 8rem;
+}
+
+main .main-cont .main-txt-1 p{
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  text-shadow: 0px 6px 4px #ddd;
+}
+
+main .main-cont .main-txt-1 span {
+  color: #40a2d5;
+}
+
+main .main-cont .main-txt-2 {
+  padding: 4rem 0;
+}
+
+main .main-cont .main-txt-3 {
+  display: flex;
+}
+
+main .main-cont .main-txt-3 button {
+  margin-right: 1rem;
+}
+
+main .main-cont .main-txt-3> :last-child {
+  color: #40a2d5;
+  background: #fff;
+  box-shadow: none;
+}
+
+main .main-cont .main-txt-4 {
+  padding-top: 15%;
+  display: flex;
+}
+
+main .main-cont .main-txt-4 .number {
+  position: relative;
+  margin-right: 3rem;
+}
+
+main .main-cont .main-txt-4 .number .bullet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 25px;
+  background: #ddd;
+  border-radius: 100px 100px 0 0;
+  z-index: -1;
+  transform: rotate(-50deg);
+}
+
+main .main-cont .main-txt-4 .number span {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+main .main-cont .main-txt-4> :nth-child(1) .bullet {
+  background: #FE8432;
+}
+
+main .main-cont .main-txt-4> :nth-child(2) .bullet {
+  background: #40A2D5;
+}
+
+main .main-cont .main-txt-4> :nth-child(3) .bullet {
+  background: #42B918;
+}
+
+main .main-cont .main-txt-4 .number p {
+  padding: 1rem;
+}
+
+main .main-cont> :last-child> :nth-child(1) {
+  width: 100%;
+  height: 100vh;
+  border-radius: 1rem;
+  border-bottom-left-radius: 40%;
+}
+
+main .main-cont> :last-child> :nth-child(2) {
+  position: absolute;
+  top: 20%;
+  right: 38%;
+  width: 300px;
+  z-index: -1;
+}
+
+main .main-cont> :last-child> :nth-child(3) {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  width: 300px;
+  z-index: -1;
+}
+
+
+/* one */
+
+.one {
+  width: 100%;
+  text-align: center;
+  margin: 8rem 0;
+  padding: 0 8%;
+}
+
+.one section {
+  max-width: 1920px;
+  background: #fafafa;
+  border-radius: 10rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.one section img {
+  width: 120px;
+  object-fit:contain;
+}
+
+/* two */
+
+.two {
+  margin: 0 8%;
+  margin-bottom: 8rem;
+}
+
+.two section {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.two> :first-child,
+.two> :last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two> :first-child div,
+.two> :last-child div {
+  width: 50%;
+}
+
+.two> :first-child {
+  margin-bottom: 5rem;
+}
+
+.two> :first-child> :nth-child(1) {
+  padding-top: 3rem;
+}
+
+.two> :first-child> :nth-child(1) p {
+  margin-bottom: 3rem;
+}
+
+.two> :first-child> :nth-child(2) span {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+  letter-spacing: 0.1rem;
+  display: block;
+  width: 500px;
+}
+
+.two> :last-child> :nth-child(1) img {
+  width: 80%;
+  border-radius: 1rem;
+  border-top-right-radius: 40%;
+}
+
+.two> :last-child> :nth-child(2) {
+  padding: 10% 0 0 0;
+}
+
+.two> :last-child> :nth-child(2) div {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 6rem;
+}
+
+.two> :last-child> :nth-child(2) div img {
+  width: 80px;
+}
+
+.two> :last-child> :nth-child(2) div b {
+  position: absolute;
+  top: -2rem;
+  left: 2rem;
+  font-size: 4rem;
+}
+
+.two> :last-child> :nth-child(2) div span {
+  width: 20%;
+}
+
+.two> :last-child> :nth-child(2) div p {
+  width: 80%;
+  padding-top: 1.5rem;
+}
+
+/* three */
+.three {
+  margin: 0 8%;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.three h2 {
+  margin-bottom: 3rem;
+}
+
+.three section,
+.three section .card> :first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.three section {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.three section .card {
+  width: 30%;
+  padding: 1rem 3rem 5rem 3rem;
+  margin: 3rem 0 6rem 0;
+  box-shadow: 5px 5px 60px #c6d9e1;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.three section .card> :first-child> :nth-child(1) {
+  width: 25px;
+  height: 25px;
+}
+
+.three section .card> :first-child> :nth-child(2) {
+  width: 5px;
+  height: 20px;
+}
+
+.three section .card> :nth-child(2) {
+  width: 150px;
+  margin-top: 2rem;
+}
+
+.three section .card h4 {
+  line-height: 2rem;
+}
+
+.three section .card p {
+  margin: 3rem 0 0.5rem 0;
+}
+
+.three section .card span {
+  color: #40a2d5;
+}
+
+.three> :last-child {
+  width: 110px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 10rem;
+  box-shadow: 0px 5px 60px #c6d9e1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.three> :last-child p {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.three> :last-child> :nth-child(2)  {
+  background: #40a2d5;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem 0.3rem;
+}
+
+
+/* four */
+.four {
+  position: relative;
+  width: 100%;
+  background: url('../images/four-1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 18rem 8%;
+  margin-bottom: 8rem;
+  text-align: center;
+  color: #fff;
+}
+
+.four section {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.four section> :nth-child(2) {
+  position: absolute;
+  top: 30%;
+  left: 13%;
+}
+
+.four section> :nth-child(3) {
+  position: absolute;
+  bottom: 20%;
+  right: 15%;
+}
+
+.four h2 {
+  margin-bottom: 5rem;
+}
+
+.four div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.four div p {
+  padding-bottom: 3rem;
+  text-align: left;
+  line-height: 2rem;
+}
+
+
+/* five */
+.five {
+  margin-bottom: 8rem;
+  text-align: center;
+  padding: 0 8%;
+}
+
+.five p {
+  width: 600px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.five section {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.five section .five-left{
+  width: 40%;
+  text-align: left;
+}
+
+.five section .five-right {
+  width: 60%;
+}
+
+.five section .five-left .form {
+  margin: 3rem 0;
+}
+
+.five section .five-left .form label {
+  display: block;
+}
+
+.five section .five-left .form input,
+.five section .five-left .form textarea {
+  background:#f9f9f9;
+  padding: 2rem 1.2rem;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.five section .five-left .form textarea {
+  resize: none;
+}
+
+.five section .five-right img {
+  width: 100%;
+}
+
+
+/* six */
+.six {
+  margin-bottom: 8rem;
+  text-align: center;
+  padding: 0 8%;
+}
+
+.six> :nth-child(2) {
+  padding: 2rem 0;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.six section {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.six section div {
+  position: relative;
+  width: 48%;
+  height:600px;
+  border-radius: 1rem;
+  color: #fff;
+}
+
+.six section div span {
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+}
+
+.six section div span p {
+  margin: 2rem 0;
+}
+
+.six section div span button {
+  background: none;
+  border: 1px solid #fff;
+  box-shadow: none;
+}
+
+.six section> :first-child {
+  background: url('../images/six-1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.six section> :last-child {
+  background: url('../images/six-2.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* seven */
+.seven {
+  margin-bottom: 8rem;
+  text-align: center;
+  padding: 0 8%;
+}
+
+.seven p {
+  width: 500px;
+  margin: 3rem auto;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  padding: 0 8%;
+  padding-bottom: 5rem;
+}
+
+footer section {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content:space-between;
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 4rem;
+}
+
+footer section span {
+  display: block;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+footer section h3 {
+  color: #40a2d5;
+  cursor: pointer;
+}
+
+footer section h4 {
+  margin-bottom: 2rem;
+}
+
+footer section> :nth-child(1),
+footer section> :nth-child(2),
+footer section> :nth-child(3),
+footer section> :nth-child(4) {
+  width: 25%;
+}
+
+footer section> :nth-child(1) p {
+  margin: 2rem 0;
+  width: 220px;
+}
+
+footer section> :nth-child(1) img {
+  width: 30px;
+}
+
+footer section> :nth-child(4) div {
+  background: #fafafa;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  width: 250px;
+  height: 50px;
+}
+
+footer section> :nth-child(4) div img {
+  width: 30px;
+  cursor: pointer;
+  vertical-align:middle;
+}
+
+footer> :last-child {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+footer> :last-child p {
+  color: #c2c2c2;
+}
